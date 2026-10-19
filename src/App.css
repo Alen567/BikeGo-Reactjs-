@@ -1,0 +1,670 @@
+
+#root {
+  width: 100%;
+}
+
+.app-shell {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 7%;
+}
+
+.site-header {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand,
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.brand-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: var(--green);
+  color: white;
+  font-size: 20px;
+}
+
+.brand-dot {
+  color: #7b9e42;
+}
+
+.header-tag,
+.step-label,
+.eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+.header-tag {
+  color: var(--muted);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 40px;
+  padding: 76px 0 85px;
+}
+
+.eyebrow {
+  color: #698347;
+  margin: 0 0 17px;
+}
+
+.hero h1,
+.section-heading h2,
+.success-card h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  letter-spacing: -2.5px;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 5.7vw, 76px);
+  line-height: 1.06;
+  margin: 0;
+}
+
+.hero h1 span {
+  color: var(--green);
+}
+
+.hero-description {
+  max-width: 420px;
+  color: var(--muted);
+  line-height: 1.9;
+  font-size: 14px;
+  margin: 23px 0;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--green);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.hero-link:hover {
+  background: var(--green-dark);
+}
+
+.hero-link span {
+  font-size: 18px;
+}
+
+.hero-art {
+  min-height: 290px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #e8eddb;
+  border-radius: 18px;
+}
+
+.hero-circle {
+  width: 245px;
+  height: 245px;
+  position: absolute;
+  border: 1px solid #cbd5b7;
+  border-radius: 50%;
+}
+
+.hero-bike {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(95px, 12vw, 155px);
+  filter: drop-shadow(0 12px 8px #344b251b);
+  transform: rotate(-8deg);
+}
+
+.art-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #697c55;
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+}
+
+.booking-section {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: clamp(22px, 4vw, 48px);
+  margin: 0 auto 75px;
+  max-width: 970px;
+  box-shadow: 0 15px 50px #263b1908;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 7px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: -1.5px;
+}
+
+.step-label {
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.form-section {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.form-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  margin: 0 0 21px;
+}
+
+.section-number {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  background: #eff3e7;
+  color: var(--green);
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 21px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 0;
+}
+
+.field label {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  padding: 12px 14px;
+  color: var(--text);
+  background: #fcfcfa;
+  border: 1px solid #dfe2d8;
+  border-radius: 6px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field input::placeholder {
+  color: #a3a69d;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #789451;
+  box-shadow: 0 0 0 3px #7894511c;
+}
+
+.field input[aria-invalid='true'] {
+  border-color: var(--danger);
+  background: #fffafa;
+}
+
+.field-error {
+  margin: 0;
+  color: var(--danger);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.section-description {
+  color: var(--muted);
+  font-size: 12px;
+  margin: -10px 0 20px 42px;
+}
+
+.bike-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.bike-card {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+  padding: 17px 14px;
+  background: white;
+  color: var(--text);
+  border: 1px solid #e0e3da;
+  border-radius: 9px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.bike-card:hover {
+  border-color: #8aa16c;
+}
+
+.bike-card.selected {
+  background: #f5f8ee;
+  border: 2px solid var(--green);
+  padding: 16px 13px;
+}
+
+.bike-emoji {
+  display: grid;
+  place-items: center;
+  width: 49px;
+  height: 49px;
+  background: #edf1e5;
+  border-radius: 10px;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.bike-name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.bike-type {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.bike-price {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.bike-price small {
+  font-size: 10px;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.bike-radio {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  display: grid;
+  place-items: center;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #d8dcd1;
+  border-radius: 50%;
+  font-size: 11px;
+}
+
+.selected .bike-radio {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+
+.price-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #f3f6ec;
+  border: 1px solid #e6ebdc;
+  border-radius: 10px;
+  padding: 22px;
+  margin-top: 27px;
+}
+
+.price-label {
+  color: #63774d;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.price-total {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 8px 0;
+}
+
+.price-note {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.price-icon {
+  width: 49px;
+  height: 49px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: var(--green);
+  color: white;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.privacy-note {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 23px 0 15px;
+}
+
+.primary-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  min-height: 50px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--green);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.primary-button:hover {
+  background: var(--green-dark);
+}
+
+.primary-button:active {
+  transform: scale(0.99);
+}
+
+.primary-button span {
+  font-size: 18px;
+}
+
+.submit-note {
+  margin: 13px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  text-align: center;
+}
+
+.success-card {
+  max-width: 550px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.success-icon {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 22px;
+  background: #e6f2d7;
+  color: var(--green);
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.success-card h2 {
+  margin: 0;
+  font-size: 36px;
+  letter-spacing: -1.5px;
+}
+
+.success-description {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.reference-box {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 25px 0;
+  padding: 18px;
+  border: 1px dashed #b8c7a4;
+  border-radius: 9px;
+  background: #f7f9f2;
+}
+
+.reference-box span,
+.summary-list span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.reference-box strong {
+  color: var(--green);
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+
+.summary-list {
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.summary-list > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.summary-list strong {
+  font-size: 12px;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.summary-list .total-row {
+  border: 0;
+  margin-top: 5px;
+}
+
+.total-row strong {
+  color: var(--green);
+  font-size: 21px;
+}
+
+.demo-notice {
+  padding: 12px;
+  border-radius: 7px;
+  background: #fff6e5;
+  color: #79571f;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 25px 0 35px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.footer-brand {
+  font-size: 19px;
+  color: var(--text);
+}
+
+@media (max-width: 760px) {
+  .app-shell {
+    padding: 0 5%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 48px 0 55px;
+    gap: 30px;
+  }
+
+  .hero-art {
+    min-height: 230px;
+  }
+
+  .hero-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero-bike {
+    font-size: 115px;
+  }
+
+  .booking-section {
+    margin-bottom: 45px;
+  }
+
+  .bike-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bike-card {
+    display: grid;
+    grid-template-columns: 52px 1fr auto;
+    align-items: center;
+    gap: 5px 12px;
+    padding: 13px;
+  }
+
+  .bike-card.selected {
+    padding: 12px;
+  }
+
+  .bike-emoji {
+    grid-row: span 3;
+    margin: 0;
+  }
+
+  .bike-name,
+  .bike-type,
+  .bike-price {
+    grid-column: 2;
+  }
+
+  .bike-radio {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .bike-price {
+    margin-top: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    height: 68px;
+  }
+
+  .brand {
+    font-size: 22px;
+  }
+
+  .header-tag {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .step-label {
+    font-size: 8px;
+    letter-spacing: 0.7px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .booking-section {
+    padding: 21px 17px;
+  }
+
+  .price-panel {
+    padding: 17px 14px;
+  }
+
+  .price-total {
+    font-size: 28px;
+  }
+
+  .site-footer {
+    flex-wrap: wrap;
+  }
+
+  .site-footer > span:last-child {
+    width: 100%;
+  }
+}
